@@ -1,0 +1,18 @@
+{
+  "name": "generator-nicksbuild",
+  "version": "0.0.1",
+  "description": "My perosnal Yeoman Generator",
+  "files": [
+    "app",
+    "router"
+  ],
+  "keywords": [
+    "yeoman-generator"
+  ],
+  "author": "Nick Pizzo",
+  "repository": "Pizzounit/My-Generator",
+  "license": "MIT",
+  "dependencies": {
+    "yeoman-generator": "^0.20.3"
+  }
+}
