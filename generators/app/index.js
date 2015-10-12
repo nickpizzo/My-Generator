@@ -61,9 +61,18 @@ module.exports = generators.Base.extend({
       'browser-sync',
       'browserify',
       'gulp',
-      'gulp-gh-pages',
+      'gh-pages',
       'gulp-sass',
       'vinyl-source-stream'
+    ];
+
+    dependencies = [
+      'normalize.css',
+      'jquery',
+      'underscore',
+      'backbone',
+      'react',
+      'react-dom'
     ];
 
     if (this.includeJade)
@@ -75,7 +84,10 @@ module.exports = generators.Base.extend({
       }
     );
 
-    this.npmInstall(['normalize.css', 'jquery', 'underscore', 'backbone'], { 'save': true }); //add
+    this.npmInstall(
+      dependencies, {
+        'save': true;
+      });
   },
 
   end: function() {
